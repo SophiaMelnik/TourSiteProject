@@ -148,7 +148,7 @@ document.querySelectorAll('.tour-card__button-info').forEach((button) => {
 document.querySelectorAll('.tour-card__button-buy').forEach((button, index) => {
     button.addEventListener('click', () => {
         const tour = tours[index];
-        const message = `You have successfully bought a tour "${tour.name}" with price $${tour.price}. Duration of the tour is: ${tour.duration} days.`;
+        const message = `Tour "${tour.name}" with price $${tour.price} has been successfully added to the cart. Duration of the tour is: ${tour.duration} days.`;
         alert(message);
     });
 });
